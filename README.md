@@ -31,6 +31,6 @@ Create a folder called maintenance on your web server to serve these files, this
 
 Hope you find it useful!
 
-[Mobile screenshot](maintenance-page_(iPhone X).png) 
+[Mobile screenshot](maintenance-page_iphone_x.png) 
 
 [Desktop screenshot](maintenance-page_desktop.png)
