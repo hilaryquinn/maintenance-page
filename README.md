@@ -29,6 +29,20 @@ Create a folder called maintenance on your web server to serve these files, this
 
 ------------------------------------------------------------------------------------------------------------
 
+-------- Replace ip number below with your own for self access, insert the code below into your .htaccess file --------
+
+<IfModule mod_rewrite.c>
+  
+    RewriteEngine On
+    RewriteCond %{REMOTE_ADDR} !=00.000.000.0
+    RewriteCond %{REQUEST_URI} !/maintenance/index\.html$ [NC]
+    RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|css|ico)$ [NC]
+    RewriteRule ^(.*)$ http://www.mydomain.com/maintenance/index.html [R=302,L]
+    
+</IfModule>
+
+------------------------------------------------------------------------------------------------------------
+
 Hope you find it useful!
 
 [Mobile screenshot](maintenance-page_iphone_x.png) 
